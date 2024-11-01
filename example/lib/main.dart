@@ -5,7 +5,7 @@ import 'package:social_media_buttons/social_media_buttons.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp();
 
   @override
   Widget build(BuildContext context) {
@@ -83,6 +83,11 @@ class MyApp extends StatelessWidget {
               },
             ),
             SocialMediaButton.dribbble(
+              onTap: () {
+                print('onTap ');
+              },
+            ),
+            SocialMediaButton.telegram(
               onTap: () {
                 print('onTap ');
               },

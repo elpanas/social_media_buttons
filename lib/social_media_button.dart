@@ -177,6 +177,14 @@ class SocialMediaButton extends StatelessWidget {
     this.color,
   });
 
+  const SocialMediaButton.telegram({
+    this.iconData = SocialMediaIcons.telegram,
+    this.url,
+    this.size = 24,
+    this.onTap,
+    this.color,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -212,8 +220,9 @@ class SocialMediaButton extends StatelessWidget {
   }
 
   _launchURLInMobile(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    final cleanedUrl = Uri.parse(url);
+    if (await canLaunchUrl(cleanedUrl)) {
+      await launchUrl(cleanedUrl);
     } else {
       throw 'Could not launch $url';
     }
