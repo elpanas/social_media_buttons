@@ -112,6 +112,6 @@ class SocialMediaIcons {
       fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
   static const IconData instagram_old = const IconData(0xf31e,
       fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
-  static const IconData telegram = const IconData(0xf0586,
-      fontFamily: _kFontFam, fontPackage: 'social_media_buttons');
+  static const IconData telegram =
+      const IconData(0xf0586, fontFamily: 'MaterialIcons');
 }

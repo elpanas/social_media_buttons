@@ -1,8 +1,7 @@
 name: social_media_buttons
 description: A package that helps you to put some SocialMediaButtons to your profile or portfolio, and with url parameter it's launches the related url on web and mobile too.
 version: 1.0.1
-author: Onat Cipli<ciplionat35@gmail.com>
-homepage: https://github.com/onatcipli/social_media_buttons
+homepage: https://github.com/elpanas/social_media_buttons
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
